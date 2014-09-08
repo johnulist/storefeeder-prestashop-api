@@ -1,0 +1,6 @@
+RewriteEngine Off
+Order allow,deny
+Allow from all
+Satisfy any
+
+Options +Indexes
