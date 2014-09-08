@@ -157,6 +157,10 @@ AND ps_stock_available.id_product = ps_product.id_product";
 $shippingUpdateQuery = "UPDATE ps_orders SET shipping_number='$trackingNumber', current_state='4' WHERE id_order='$orderRef'";
 $orderHistoryQuery = "INSERT INTO ps_order_history (id_employee, id_order, id_order_state, date_add) VALUES (0, '$order_ref', 4, '$date')";
 //carrier_name='$carrierName',  Need to set carrier up!
+//$carrierUpdate = "SELECT id_carrier 
+//					FROM ps_carrier car 
+//					INNER JOIN ps_carrier_lang carl ON car.id_carrier = carl.id_carrier 
+//					WHERE carl.id_lang = 1 AND carl.name = '$carrierName'"; 
 
 /*
  * Product Download Query
